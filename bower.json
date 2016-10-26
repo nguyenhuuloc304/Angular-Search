@@ -4,15 +4,16 @@
   "description": "Help search with many conditions and convenience",
   "version": "1.0.5",
   "main": [
-    "./angular-search.min.css",
-    "./angular-search-tpls.js"
+    "./angular-search-advanced.min.css",
+    "./angular-search-advanced-tpls.js"
   ],
   "keywords": [
     "angularjs",
     "search"
   ],
   "authors": [
-    "Nguyen Huu Loc <nguyenhuuloc304@gmail.com>"
+    "Nguyen Huu Loc",
+    "nguyenhuuloc304@gmail.com"
   ],
   "license": "MIT",
   "private": false,
