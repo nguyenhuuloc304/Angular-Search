@@ -2,7 +2,7 @@
   "name": "angular-search",
   "homepage": "https://github.com/nguyenhuuloc304/Angular-Search",
   "description": "Help search with many conditions and convenience",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": [
     "./angular-advanced-searchbox.min.css",
     "./angular-advanced-searchbox-tpls.js"
