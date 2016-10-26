@@ -4,8 +4,8 @@
   "description": "Help search with many conditions and convenience",
   "version": "1.0.2",
   "main": [
-    "./angular-advanced-searchbox.min.css",
-    "./angular-advanced-searchbox-tpls.js"
+    "./angular-search.min.css",
+    "./angular-search-tpls.js"
   ],
   "keywords": [
     "angularjs",
