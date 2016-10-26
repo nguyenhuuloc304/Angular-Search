@@ -1,6 +1,6 @@
 /*! 
  * angular-search v1.0.0
- * https://github.com/nguyenhuuloc304/Angular-Search 
+ * https://github.com/nguyenhuuloc304/angular-search-advanced
  * Author: Nguyen Huu Loc
  * License: MIT
  */
