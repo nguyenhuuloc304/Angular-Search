@@ -1,8 +1,7 @@
 /*! 
- * angular-advanced-searchbox
- * https://github.com/dnauck/angular-advanced-searchbox
- * Copyright (c) 2015 Nauck IT KG http://www.nauck-it.de/
- * Author: Daniel Nauck <d.nauck(at)nauck-it.de>
+ * angular-search
+ * https://github.com/nguyenhuuloc304/Angular-Search 
+ * Author: Nguyen Huu Loc
  * License: MIT
  */
 
@@ -10,7 +9,7 @@
 
 'use strict';
 
-angular.module('angular-advanced-searchbox', [])
+angular.module('angular-search', [])
     .directive('nitAdvancedSearchbox', function() {
         return {
             restrict: 'E',
@@ -24,7 +23,7 @@ angular.module('angular-advanced-searchbox', [])
             },
             replace: true,
             templateUrl: function(element, attr) {
-                return attr.templateUrl || 'angular-advanced-searchbox.html';
+                return attr.templateUrl || 'angular-search.html';
             },
             controller: [
                 '$scope', '$attrs', '$element', '$timeout', '$filter',

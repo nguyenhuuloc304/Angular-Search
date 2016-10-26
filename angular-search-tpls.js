@@ -1,8 +1,7 @@
 /*! 
- * angular-advanced-searchbox
- * https://github.com/dnauck/angular-advanced-searchbox
- * Copyright (c) 2015 Nauck IT KG http://www.nauck-it.de/
- * Author: Daniel Nauck <d.nauck(at)nauck-it.de>
+ * angular-search v1.0.0
+ * https://github.com/nguyenhuuloc304/Angular-Search 
+ * Author: Nguyen Huu Loc
  * License: MIT
  */
 
@@ -10,7 +9,7 @@
 
 'use strict';
 
-angular.module('angular-advanced-searchbox', [])
+angular.module('angular-search', [])
     .directive('nitAdvancedSearchbox', function() {
         return {
             restrict: 'E',
@@ -24,7 +23,7 @@ angular.module('angular-advanced-searchbox', [])
             },
             replace: true,
             templateUrl: function(element, attr) {
-                return attr.templateUrl || 'angular-advanced-searchbox.html';
+                return attr.templateUrl || 'angular-search.html';
             },
             controller: [
                 '$scope', '$attrs', '$element', '$timeout', '$filter',
@@ -375,10 +374,10 @@ angular.module('angular-advanced-searchbox', [])
     ]);
 })();
 
-angular.module('angular-advanced-searchbox').run(['$templateCache', function($templateCache) {
+angular.module('angular-search').run(['$templateCache', function($templateCache) {
   'use strict';
 
-  $templateCache.put('angular-advanced-searchbox.html',
+  $templateCache.put('angular-search.html',
     "<div class=advancedSearchBox ng-class={active:focus} ng-init=\"focus = false\" ng-click=\"!focus ? setSearchFocus = true : null\"><span ng-show=\"searchParams.length < 1 && searchQuery.length === 0\" class=\"search-icon glyphicon glyphicon-search\"></span> <a ng-href=\"\" ng-show=\"searchParams.length > 0 || searchQuery.length > 0\" ng-click=removeAll() role=button><span class=\"remove-all-icon glyphicon glyphicon-trash\"></span></a><div><div class=search-parameter ng-repeat=\"searchParam in searchParams\"><a ng-href=\"\" ng-click=removeSearchParam($index) role=button><span class=\"remove glyphicon glyphicon-trash\"></span></a><div class=key data-key={{searchParam.key}} ng-click=\"enterEditMode($event, $index)\">{{searchParam.name}}:</div><div class=value><span ng-show=!searchParam.editMode ng-click=\"enterEditMode($event, $index)\">{{searchParam.value}}</span> <input name=value type={{searchParam.type}} nit-auto-size-input nit-set-focus=searchParam.editMode ng-keydown=\"keydown($event, $index)\" ng-blur=\"leaveEditMode($event, $index)\" ng-show=searchParam.editMode ng-change=\"searchParam.restrictToSuggestedValues !== true ? searchParamValueChanged(searchParam) : null\" ng-model=searchParam.value uib-typeahead=\"suggestedValue for suggestedValue in searchParam.suggestedValues | filter:$viewValue\" typeahead-min-length=0 typeahead-on-select=\"searchParamTypeaheadOnSelect($item, searchParam)\" typeahead-editable=\"searchParam.restrictToSuggestedValues !== true\" typeahead-select-on-exact=true typeahead-select-on-blur=\"searchParam.restrictToSuggestedValues !== true ? false : true\" placeholder=\"{{searchParam.placeholder}}\"></div></div><input name=searchbox class=search-parameter-input nit-auto-size-input nit-set-focus=setSearchFocus ng-keydown=keydown($event) placeholder={{placeholder}} ng-focus=\"focus = true\" ng-blur=\"focus = false\" uib-typeahead=\"parameter as parameter.name for parameter in parameters | filter:isUnsedParameter | filter:{name:$viewValue} | limitTo:parametersDisplayLimit\" typeahead-on-select=\"searchQueryTypeaheadOnSelect($item, $model, $label)\" ng-change=searchQueryChanged(searchQuery) ng-model=\"searchQuery\"></div><div class=search-parameter-suggestions ng-show=\"parameters && focus\"><span class=title ng-show=\"(parameters | filter:isUnsedParameter | limitTo:parametersDisplayLimit).length\">{{parametersLabel}}:</span> <span class=search-parameter ng-repeat=\"param in parameters | filter:isUnsedParameter | limitTo:parametersDisplayLimit\" data-key={{param.key}} ng-mousedown=addSearchParam(param)>{{param.name}}</span></div></div>"
   );
 
