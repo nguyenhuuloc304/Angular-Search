@@ -2,7 +2,7 @@
   "name": "angular-search-advanced",
   "homepage": "https://github.com/nguyenhuuloc304/angular-search-advanced",
   "description": "Help search with many conditions and convenience",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": [
     "./angular-search.min.css",
     "./angular-search-tpls.js"
@@ -24,6 +24,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular-search-advanced": "^1.0.4"
+    "angular-search-advanced": "^1.0.5"
   }
 }
