@@ -1,0 +1,25 @@
+{
+  "name": "angularsearch",
+  "homepage": "https://github.com/nguyenhuuloc304/Angular-Search",
+  "description": "Help search with many conditions and convenience",
+  "main": [
+    "./angular-advanced-searchbox.min.css",
+    "./angular-advanced-searchbox-tpls.js"
+  ],
+  "keywords": [
+    "angularjs",
+    "search"
+  ],
+  "authors": [
+    "Nguyen Huu Loc"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
