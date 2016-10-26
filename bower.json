@@ -2,6 +2,7 @@
   "name": "angular-search",
   "homepage": "https://github.com/nguyenhuuloc304/Angular-Search",
   "description": "Help search with many conditions and convenience",
+  "version": "1.0.0",
   "main": [
     "./angular-advanced-searchbox.min.css",
     "./angular-advanced-searchbox-tpls.js"
@@ -11,7 +12,8 @@
     "search"
   ],
   "authors": [
-    "Nguyen Huu Loc"
+    "Nguyen Huu Loc <nguyenhuuloc304@gmail.com>",
+    ""
   ],
   "license": "MIT",
   "private": true,
