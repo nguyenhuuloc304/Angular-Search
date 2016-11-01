@@ -2,10 +2,10 @@
   "name": "angular-search-advanced",
   "homepage": "https://github.com/nguyenhuuloc304/angular-search-advanced",
   "description": "Help search with many conditions and convenience",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": [
-    "./angular-search-advanced.min.css",
-    "./angular-search-advanced-tpls.js"
+    "./dist/angular-advanced-searchbox.min.css",
+    "./dist/angular-advanced-searchbox-tpls.js"
   ],
   "keywords": [
     "angularjs",
@@ -21,10 +21,16 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "src",
+    "Gruntfile.js",
+    "package.json",
     "test",
     "tests"
   ],
   "dependencies": {
-    "angular-search-advanced": "^1.0.6"
+        "angular": "1",
+        "jquery": "2",
+        "bootstrap": "3",
+        "angular-bootstrap": "1"
   }
 }
